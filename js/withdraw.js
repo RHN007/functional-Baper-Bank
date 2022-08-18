@@ -1,5 +1,4 @@
-// step 1 
-
+/***
 document.getElementById('btn-withdraw').addEventListener('click', function(){
     const withdrawInputField = document.getElementById('withdraw-field'); 
     const newWithdrawAmount = parseFloat(withdrawInputField.value); 
@@ -11,13 +10,10 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
         alert('Please give a valid number')
         return
     }
-
-   
     //step 2 : 
     const previousWithdrawAmountString = document.getElementById('withdraw-total'); 
     const previousWithdrawAmount = parseFloat(previousWithdrawAmountString.innerText); 
 
-   
     //step 3 : Updating Balance
     
     const balanceTotalString = document.getElementById('balance-total'); 
@@ -33,7 +29,6 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
     const updateBalanceTotal = newWithdrawAmount + newBalanceTotal; 
     balanceTotalString.innerText= updateBalanceTotal; 
 
-
-
-
 })
+ * ***/ 
+
