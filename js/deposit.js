@@ -1,5 +1,9 @@
 document.getElementById('btn-deposit').addEventListener('click', function(){
     const newDepositAmount = getInputFieldValueById('deposit-field');
+    if(isNaN(newDepositAmount )){
+        alert('please provide a Number')
+        return
+    }
     /*** Get Previous deposit total by id : */
     const previousDepositTotal = getTexElementValueById('deposit-total')
     //calculate new deposit totAL : 

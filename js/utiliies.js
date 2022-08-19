@@ -3,7 +3,15 @@ function getInputFieldValueById(inputFieldId){
     const inputField = document.getElementById(inputFieldId); 
     const inputFieldString = inputField.value; 
     const inputValueAmount = parseFloat(inputFieldString);   
+    
+    
+    // if(isNaN(inputValueAmount)){
+    //     alert('please provide a Number')
+    //     return
+    // }
+
     inputField.value = ''; 
+   
     return inputValueAmount; 
 }
 
